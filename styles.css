@@ -1,14 +1,16 @@
 body {
-  
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
   margin: 0;
-  padding: 0;
 }
 
 html, body {
   height: 100%;
+}
+
+html {
+  background-image: radial-gradient(
+    rgb(57, 8, 90),
+    rgb(56, 11, 87)
+    );
 }
 
 main {
@@ -16,24 +18,14 @@ main {
     rgb(64, 10, 100),
     rgb(138, 0, 230)
   );
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  max-width: 600px;
+  min-width: auto;
   height: 100%;
   margin: auto;
-}
-
-.sidebar {
-  background-color: rgb(52, 6, 83);
-  height: 95.9%;
-  width: 25%;
-  position: absolute;
-  top: 0;
-  padding-top: 40px;
-  box-shadow: 0px 0px 2px 2px rgb(19, 19, 19);
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
-}
-
-.sidebar.right {
-  right: 0;
+  box-shadow: 0px 0px 1px 1px rgb(19, 19, 19);
 }
 
 .grid-container {
