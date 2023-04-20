@@ -9,14 +9,11 @@ body {
 }
 
 html, body {
-  height: 100%;
-}
-
-html {
   background-image: radial-gradient(
     rgb(57, 8, 90),
     rgb(56, 11, 87)
     );
+  height: 100%;
 }
 
 main {
