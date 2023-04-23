@@ -102,10 +102,12 @@ img {
 @media screen and (max-width: 1100px) {
   body {
     overflow: scroll;
+    height: auto;
   }
 
   main {
     margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   .my-image {
