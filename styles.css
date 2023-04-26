@@ -6,13 +6,14 @@ body {
   margin: auto;
   padding: 16px;
   overflow: hidden;
-  background-image: radial-gradient(
-    rgb(40, 120, 173),
-    rgb(28, 77, 133)
-    );
+
 }
 
 html, body {
+  background-image: linear-gradient(
+    rgb(40, 120, 173),
+    rgb(48, 107, 175)
+    );
   height: 100%;
 }
 
