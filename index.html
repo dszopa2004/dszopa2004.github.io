@@ -32,10 +32,14 @@
   </head>
   <body>
     <div class="more-info">
-      <button>More Info</button>
+      <button onclick="displayBtn()">More Info</button>
+      <div class="info-btns" id="info-btns" style="display: none;">
+          <button>one</button>
+          <button>two</button>
+      </div>
     </div>
       <main>
-        <div class="grid-container">
+        <div class="grid-container">  
           <div class="my-image">
             <img src="images/web_pic.jpeg" height="250" width="250" />
             <h1 class="my-name">Dominik Szopa</h1>
@@ -118,5 +122,6 @@
         </div>
       </main>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

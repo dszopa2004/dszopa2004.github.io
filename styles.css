@@ -72,6 +72,15 @@ button {
   width: fit-content;
 }
 
+.info-btns button {
+  display: block;
+  font-size: 16px;
+  margin-top: 20px;
+  min-height: 50px; 
+  min-width: 100px;
+  border-radius: 15px;
+}
+
 button:hover {
   cursor: pointer;
   background-color: rgb(12, 146, 255);
