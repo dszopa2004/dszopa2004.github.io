@@ -140,5 +140,10 @@ img {
   .more-info {
     position: unset;
     margin-left: 0%;
+    display: inline-block;
+  }
+
+  .info-btns button {
+    display: inline;
   }
 }
