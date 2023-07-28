@@ -145,6 +145,9 @@ img {
   }
 
   .info-btns button {
+    min-width: auto;
+    min-height: auto;
+    margin: 5px;
     display: inline;
   }
 }
