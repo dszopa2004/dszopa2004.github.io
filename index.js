@@ -1,17 +1,25 @@
+// Get all the buttons with the specified class
+const buttons = document.querySelectorAll('.more-info');
 
-var isClick = false;
-function displayBtn() {
-  var text = document.getElementById("info-btns");
-  isClick = !isClick;
+let lastClickedButton = null;
 
-  if(isClick && mediaQ.matches)
-    text.style.display = "block";
-  else if(isClick && mediaQuery.matches)
-    text.style.display = "inline";
-  else
-    text.style.display = "none";
+// Helper function to resize the clicked button
+function resizeButton(event) {
+  const clickedButton = event.target;
+
+  // Reset the size of the previously clicked button
+  if (lastClickedButton && lastClickedButton !== clickedButton) {
+    lastClickedButton.style.transform = 'scale(1)';
+  }
+
+  // Increase the size of the clicked button
+  clickedButton.style.transform = 'scale(1.2)';
+  
+  // Update the lastClickedButton to the current clickedButton
+  lastClickedButton = clickedButton;
 }
 
-const mediaQ = window.matchMedia('(min-width: 1100px)')
-const mediaQuery = window.matchMedia('(max-width: 1100px)'); // Adjust the max-width to your desired breakpoint
-handleDisplayType(mediaQuery); // Call the function once to apply initial styles
+// Attach a click event listener to each button
+buttons.forEach(button => {
+  button.addEventListener('click', resizeButton);
+});

@@ -73,12 +73,10 @@ button {
   width: fit-content;
 }
 
-.info-btns button {
+.more-info button {
   display: block;
   font-size: 16px;
   margin-top: 20px;
-  min-height: 50px; 
-  min-width: 100px;
   border-radius: 15px;
 }
 
@@ -144,10 +142,10 @@ img {
     display: inline-block;
   }
 
-  .info-btns button {
+  .more-info button {
     min-width: auto;
     min-height: auto;
     margin: 5px;
-    display: inline;
+    display: inline-block;
   }
 }
