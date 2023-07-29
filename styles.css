@@ -18,7 +18,7 @@ html, body {
 
 main {
   border-radius: 50px;
-  margin-top: 13%;
+  margin-top: 2%;
   box-shadow: 0px 0px 1px 1px rgb(19, 19, 19);
   background-image: linear-gradient(
     rgb(0, 87, 158),
@@ -66,12 +66,28 @@ button {
   transition: background-color 0.2s;
 }
 
+.more-info {
+  position: fixed;
+  margin-top: 1.5%;
+  margin-left: -15%;
+  width: fit-content;
+}
+
+.more-info button {
+  display: block;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
 button:hover {
   cursor: pointer;
   background-color: rgb(12, 146, 255);
 }
 
 .my-image {
+  grid-column-start: 1;
+  grid-column-end: 3;
   display:inline-block;
   text-align: center;
   padding: 50px;
@@ -81,7 +97,7 @@ button:hover {
   padding: 50px;
 }
 
-.about-me {
+.page-title {
   font-size: 40px;
   text-align: center;
 }
@@ -120,5 +136,18 @@ img {
     grid-column-start: 1;
     grid-column-end: 3;
     padding: 16px;
+  }
+
+  .more-info {
+    position: unset;
+    margin-left: 0%;
+    display: inline-block;
+  }
+
+  .more-info button {
+    min-width: auto;
+    min-height: auto;
+    margin: 5px;
+    display: inline-block;
   }
 }
